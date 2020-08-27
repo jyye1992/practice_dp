@@ -4,7 +4,7 @@
 namespace App;
 
 
-class SabarEquirement implements Equirement
+class SaberEquirement implements Equirement
 {
     public function createWeapon()
     {
