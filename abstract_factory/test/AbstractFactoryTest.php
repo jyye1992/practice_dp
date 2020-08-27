@@ -4,35 +4,35 @@
 use App\ArcherEquirement;
 use App\Bow;
 use App\Clothes;
-use App\SabarEquirement;
+use App\SaberEquirement;
 use App\SteelArmor;
 use App\Sword;
 use PHPUnit\Framework\TestCase;
 
 class AbstractFactoryTest extends TestCase
 {
-    private $sabarEquirement;
+    private $saberEquirement;
     private $archerEquirement;
 
     /**
      * @test
      */
-    public function shouldCreateSwordForSabar()
+    public function shouldCreateSwordForSaber()
     {
         $this->assertInstanceOf(
             Sword::class,
-            $this->sabarEquirement->createWeapon()
+            $this->saberEquirement->createWeapon()
         );
     }
 
     /**
      * @test
      */
-    public function shouldCreateSteelArmorForSabar()
+    public function shouldCreateSteelArmorForSaber()
     {
         $this->assertInstanceOf(
             SteelArmor::class,
-            $this->sabarEquirement->createArmor()
+            $this->saberEquirement->createArmor()
         );
     }
 
@@ -63,7 +63,6 @@ class AbstractFactoryTest extends TestCase
     {
         parent::setUp();
         $this->archerEquirement = new ArcherEquirement();
-        $this->sabarEquirement = new SabarEquirement();
+        $this->saberEquirement = new SaberEquirement();
     }
-
 }
