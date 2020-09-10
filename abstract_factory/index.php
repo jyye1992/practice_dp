@@ -2,18 +2,16 @@
 
 require_once "./vendor/autoload.php";
 
-use App\SabarEquirement;
+use App\SaberEquirement;
 
-$sabarEquirement = new SabarEquirement();
+$saberEquirement = new SaberEquirement();
 $archerEquirement = new \App\ArcherEquirement();
-echo "sabar\n";
+echo "saber\n";
 echo "-----\n";
-echo $sabarEquirement->createWeapon()->display() . "\n";
-echo $sabarEquirement->createArmor()->display() . "\n";
+echo $saberEquirement->createWeapon()->display() . "\n";
+echo $saberEquirement->createArmor()->display() . "\n";
 echo "\n\n";
 echo "archer\n";
 echo "-----\n";
 echo $archerEquirement->createWeapon()->display() . "\n";
 echo $archerEquirement->createArmor()->display() . "\n";
-
-
