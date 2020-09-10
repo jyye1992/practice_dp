@@ -1,6 +1,6 @@
 <?php
 
-
+use App\Singleton;
 use PHPUnit\Framework\TestCase;
 
 class SingletonTest extends TestCase
