@@ -1,20 +1,10 @@
 {
-  "name": "vendor_name/unitTest",
-  "description": "description",
-  "minimum-stability": "stable",
-  "license": "proprietary",
-  "authors": [
-    {
-      "name": "felix.ye",
-      "email": "email@example.com"
+    "require": {
+        "phpunit/phpunit": "^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
     }
-  ],
-  "require": {
-    "phpunit/phpunit": "^9.3"
-  },
-  "autoload": {
-    "psr-4": {
-      "App\\": "src/"
-    }
-  }
 }
